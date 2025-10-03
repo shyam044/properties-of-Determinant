@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Properties of Determinant</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    .main-heading {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-bottom: 40px;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-heading h1 {
+      font-weight: 700;
+      font-size: 48px;
+    }
+
+    .card-prob {
+      background-color: white;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin: 0 auto;
+      max-width: 900px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      font-weight: 600;
+      color: #0072ff;
+      margin-top: 30px;
+    }
+
+    .icon {
+      color: #00c6ff;
+      margin-right: 10px;
+    }
+
+    .formula {
+      background: #f0f8ff;
+      border-left: 5px solid #00c6ff;
+      padding: 15px 20px;
+      font-size: 18px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .note-box {
+      background: #fff5e6;
+      border-left: 5px solid #ff9500;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 60px 0 20px;
+      color: #aaa;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: 40px auto 20px;
+      padding: 0 20px;
+    }
+
+    .btn-custom {
+      width: 120px;
+      font-weight: 600;
+      border-radius: 30px;
+    }
+
+    img {
+      max-width: 100%;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main-heading">
+    <h1><i class="fas fa-square-root-alt"></i> Properties of Determinant</h1>
+  </div>
+
+  <div class="card card-prob">
+
+    <h3 class="section-title"><i class="fas fa-list icon"></i>Key Properties</h3>
+    
+    <div class="formula">
+      <ul>
+        <li><strong>Maximum number of terms</strong> in the determinant of an n × n matrix is <strong>n!</strong></li>
+        <li>For a <strong>lower or upper triangular matrix</strong>, the determinant is the <strong>product of diagonal elements</strong>.</li>
+      </ul>
+    </div>
+
+    <img src="Screenshot 2025-10-02 222042.png" alt="Triangular Matrix Example Image">
+
+    <div class="formula">
+      <ul>
+        <li>If <strong>two rows or two columns</strong> are identical, then the determinant is <strong>0</strong>.</li>
+        <li>If <strong>two rows or two columns are interchanged</strong>, the sign of the determinant changes.</li>
+        <li><strong>det(A) = det(A<sup>T</sup>) = det(1/A<sup>-1</sup>)</strong></li>
+      </ul>
+    </div>
+
+    <img src="Screenshot 2025-10-02 223206.png" alt="Row/Column Swap Example Image">
+
+    <div class="formula">
+      <ul>
+        <li>If matrix A is multiplied by a scalar <strong>k</strong>, then <strong>det(kA) = k<sup>n</sup> × det(A)</strong>, where A is n × n.</li>
+      </ul>
+    </div>
+
+    <img src="Screenshot 2025-10-02 223518.png" alt="Scalar Multiplication Example Image">
+
+    <div class="note-box">
+      <h5><i class="fas fa-exclamation-triangle icon"></i>Important Note:</h5>
+      <ul>
+        <li><strong>Simultaneous row and column operations</strong> should <strong>not</strong> be used while computing determinant.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Prev / Next Navigation -->
+  <div class="nav-buttons">
+    <a href="https://shyam044.github.io/gate/" class="btn btn-danger btn-custom"><i class="fas fa-arrow-left"></i> Prev</a>
+    <a href="#" class="btn btn-primary btn-custom">Next <i class="fas fa-arrow-right"></i></a>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Determinants Learning • Designed with ❤️
+  </div>
+
+</body>
+
+</html>
